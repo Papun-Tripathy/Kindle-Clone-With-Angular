@@ -1,0 +1,36 @@
+/*-------------------------- StickyUp ---------------------------*/
+#topNavBar{transition: .3s; height: 100px;}
+.stickyUp{height: 65px !important;}
+.tu{text-transform: uppercase;}
+/* ////////////////////////////////////////////////////////////////////// */
+
+
+/*------------------------ DropDown Header Menu --------------------------*/
+#DropDownBox{display: none; box-shadow: 0 0 5px black,0 5px 5px white; border-radius: 6px;max-width: 90vw !important;top: 50px; left: -95px; width: max-content; float: left;position: absolute; background-color: #fcfcfc; }
+#DropDownBox .row{width: 75vw;justify-content: inherit; padding-right: 10%;}
+#DDoption:hover #DropDownBox{display: block;}
+.dropright{transition: .8s;}
+.SideDrop{display: none; position: absolute; top: 0px;left: 0px;transition: .8s;z-index: 100;}
+.dropright:hover .SideDrop{box-shadow: 0 0 3px black; display: block; background-color: ivory; border-radius: 10px; padding: 10% 0px;}
+/* ////////////////////////////////////////////////////////////////////// */
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\ dropdowncontents \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+#dropdownMaster{display: none; left: auto; transition: display ease-in .5s; }
+/* #dropdownA:hover{ background-color: aquamarine;} */
+#dropdownA:hover ~ #dropdownMaster{display: inline; }
+#dropdownContent{ margin-top: 0; top: -2px; height: auto; overflow: auto; overflow-x: hidden; }
+#dropdownMaster:hover{ display: inline;}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\Inside Drop side\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.sideTrigger { position: relative; z-index: 1; }
+.sideDrop { display: flex; z-index: -2; visibility: hidden; position: absolute; flex-direction: column; right: -73%; width: fit-content; bottom: 18px; z-index: 2; background-color: white; padding: 10px; box-shadow: 0 0 4px black; border-radius: 10px; }
+.sideTrigger:hover ~ .sideDrop{ display: flex; visibility: visible; }
+.sideDrop:hover { visibility: visible; }
+.sideDrop a:hover{text-decoration: none;}
+#lastDrop { right: 80%; }
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\Utility Classes\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.l-one{ left: -100%; }
+.l-zero{ left: 0;}
+.widmax{ width: max-content;}
+.fdcAha{ flex-direction: column !important; height: auto !important; }

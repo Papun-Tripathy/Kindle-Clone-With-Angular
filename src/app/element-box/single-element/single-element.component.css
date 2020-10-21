@@ -1,0 +1,8 @@
+.outer__box{overflow:hidden; display: inline-flex; width: fit-content; padding:0;transition: .4s; margin: 10px; box-shadow: 0 0 65px black; }
+.content__onImg{ padding:0; font-size:larger; text-transform:uppercase; display:flex; align-items:flex-end;justify-content: center;}
+.heading__onImg{ padding:10px 2px; width:100%; text-align:center; background-color:white; opacity:.72; font-weight: bold; }
+.inner__image{transition:.5s;}
+.outer__box:hover{box-shadow: 0 0 9px #3AC0C4, 0 0 55px white, 0 0 125px white;}
+.outer__box:hover .inner__image{transform:scale(1.3);}
+.heading__onImg{transition:.5s;}
+.outer__box:hover .heading__onImg{padding-top:25px; opacity:.9; background-color: #3AC0C4;}

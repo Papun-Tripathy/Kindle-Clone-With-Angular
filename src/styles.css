@@ -1,0 +1,5 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+.hover__BlueEffect{color: black !important;transition: .4s;}
+.hover__BlueEffect:hover{color: #3AC0C4 !important;}
